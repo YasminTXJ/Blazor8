@@ -1,0 +1,54 @@
+﻿@inject IJSRuntime JS
+@rendermode InteractiveServer
+@using Blazor8.Components.Pages.Components
+@page "/component"
+<h3>Component</h3>
+
+<div class="row">
+    <div class="col-md-3">
+        <BoodtstrapCard EventClick="@((e) => EventClickCard1(e))"
+                        Titleb="titulo do cartão 1"
+                        Descriptionb="Este é um cartão"
+                        ButtonTextb="Comprar" />
+    </div>
+    <div class="col-md-3">
+        <BoodtstrapCard EventClick="EventClickCard2"
+                        Titleb="titulo do cartão 2"
+                        Descriptionb="Este é um cartão"
+                        ButtonTextb="Comprar" />
+    </div>
+    <div class="col-md-3">
+        <BoodtstrapCard>
+            <h4> Eu sou o ChildContent</h4>
+            <p>Ola mundo!</p>
+            <button @onclick="EventClickCard1" class="btn btn-primary">Clique</button>
+        </BoodtstrapCard>
+    </div>
+    <div class="col-md-3">
+        <BoodtstrapCard>
+            <CardHeader>
+                Cabeçalho
+            </CardHeader>
+            <CardText>
+                Conteúdo
+            </CardText>
+            <CardFooter>
+                Rodapé
+            </CardFooter>
+        </BoodtstrapCard>
+    </div>
+</div>
+
+
+
+
+@code {
+    public void EventClickCard1(MouseEventArgs a)
+    {
+        JS.InvokeVoidAsync("alert", "Card 1 -" + a.ScreenY);
+    }
+    public void EventClickCard2()
+    {
+        JS.InvokeVoidAsync("alert", "Card 2");
+    }
+}
