@@ -25,7 +25,8 @@
         </BoodtstrapCard>
     </div>
     <div class="col-md-3">
-        <BoodtstrapCard>
+        <CascadingValue Name="CardHeaderButtonText" Value=@("Cadastrar")>
+            <BoodtstrapCard>
             <CardHeader>
                 Cabeçalho
             </CardHeader>
@@ -36,9 +37,16 @@
                 Rodapé
             </CardFooter>
         </BoodtstrapCard>
+        </CascadingValue>
+        
     </div>
 </div>
-
+<div class="row">
+    <div class="col-md-3">
+        <InpuString  Placeholder="Digite seu texto" 
+            class="form-control" maxlength="5" autocomplete="off" ></InpuString>
+    </div>
+</div>
 
 
 

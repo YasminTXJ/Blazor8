@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h0sOKHf32gg=",
+  "dgSpecHash": "I/bf55aaFe0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj",
+  "projectFilePath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yasmi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.10\\microsoft.aspnetcore.authorization.8.0.10.nupkg.sha512",
     "C:\\Users\\yasmi\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.10\\microsoft.aspnetcore.components.8.0.10.nupkg.sha512",

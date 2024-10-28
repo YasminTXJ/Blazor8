@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+@layout Blazor8.Components.Layout.MainLayout
+
+<div class="row">
+    <div class="col-3">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="/profile">Dados do usuário</a></li>
+            <li class="list-group-item"><a href="profile/secutiry">Segurança</a></li>
+            <li class="list-group-item">Privacidade</li>
+       
+        </ul>
+
+    </div>
+    <div class="col-9">
+        @Body
+    </div>
+
+</div>
+
+
+
+
+
+@code {
+
+}

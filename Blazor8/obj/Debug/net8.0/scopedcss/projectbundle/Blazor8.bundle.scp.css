@@ -201,3 +201,18 @@ main[b-2id7mgwilt] {
         overflow-y: auto;
     }
 }
+/* _content/Blazor8/Components/Pages/Separation.razor.rz.scp.css */
+/*
+    CSS Isolation - todo o bloco só é aplicado ao componente
+*/
+p[b-5rk6slj1t6]{
+    font-size: 10px;
+}
+/*
+    nav-item é aplicado somente ao componente separation
+
+*/
+.nav-item[b-5rk6slj1t6] {
+    font-size: 10px !important;
+}
+

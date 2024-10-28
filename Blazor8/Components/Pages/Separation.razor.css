@@ -1,0 +1,14 @@
+﻿/*
+    CSS Isolation - todo o bloco só é aplicado ao componente
+*/
+p{
+    font-size: 10px;
+}
+/*
+    nav-item é aplicado somente ao componente separation
+
+*/
+.nav-item {
+    font-size: 10px !important;
+}
+

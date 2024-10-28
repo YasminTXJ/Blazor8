@@ -1698,11 +1698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj",
+      "projectUniqueName": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj",
       "projectName": "Blazor8.Client",
-      "projectPath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj",
+      "projectPath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj",
       "packagesPath": "C:\\Users\\yasmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8.Client\\obj\\",
+      "outputPath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yasmi\\AppData\\Roaming\\NuGet\\NuGet.Config",

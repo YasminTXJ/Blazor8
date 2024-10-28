@@ -1,0 +1,19 @@
+# Ignorar arquivos temporários do sistema
+*.log
+*.tmp
+
+# Ignorar diretórios de build e de saída
+/bin/
+/obj/
+/dist/
+
+# Ignorar configurações de ambiente de desenvolvimento
+.env
+.vscode/
+.idea/
+
+# Ignorar arquivos específicos do Visual Studio
+.vs/
+
+# Ignorar dependências específicas de linguagens (exemplo: Node.js)
+node_modules/
