@@ -1,0 +1,31 @@
+﻿@page "/dependencyInjection"
+
+@inject NumeroAleatorio NumeroAleatorioUm
+@inject NumeroAleatorio NumeroAleatorioDois
+@* @inject <classe a ser injetada>   <nome da variavel a ser usada>*@
+@inject IMensagem MensagemSimples
+
+<h3>DependecyInjection</h3>
+
+<div class="row">
+    <div class="col-6">
+        Valor 1: @NumeroAleatorioUm.NumeroIdentificador
+    </div>
+    <div class="col-6">
+        Valor 2: @NumeroAleatorioDois.NumeroIdentificador
+    </div>
+</div>
+<div class="row">
+    <div class='col-4'>
+        Mensagem enviada?  @MensagemSimples.Enviar("Mensagem Simples")
+    </div>
+    <div class='col-4'>
+        Mensagem enviada?  @MensagemChaveada.Enviar("Mensagem Chaveada")
+    </div>
+    <div class='col-4'></div>
+</div>
+
+
+@code {
+
+}

@@ -1,5 +1,6 @@
 using Blazor8.Client.Pages;
 using Blazor8.Components;
+using Blazor8.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddSingleton<NumeroAleatorio>();
+builder.Services.AddSingleton<IMensagem, MensagemSMS>();
+///para quando alguns componentes querem enviar mensagem por sma e outros
+///por whatsapp usamos a injeção de dependência chaveada
+builder.Services.AddKeyedScoped<IMensagem, MensagemWhatsApp>("whatsapp");
+builder.Services.AddKeyedScoped<IMensagem, MensagemSMS>("sms");
 
 var app = builder.Build();
 

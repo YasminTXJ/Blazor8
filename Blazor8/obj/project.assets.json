@@ -1179,20 +1179,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yasmi\\.nuget\\packages\\": {}
+    "C:\\Users\\dti-yasminj\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8\\Blazor8.csproj",
+      "projectUniqueName": "C:\\Users\\dti-yasminj\\OneDrive - Lab. Teuto Brasileiro\\Projetos\\Blazor8\\Blazor8\\Blazor8.csproj",
       "projectName": "Blazor8",
-      "projectPath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8\\Blazor8.csproj",
-      "packagesPath": "C:\\Users\\yasmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8\\obj\\",
+      "projectPath": "C:\\Users\\dti-yasminj\\OneDrive - Lab. Teuto Brasileiro\\Projetos\\Blazor8\\Blazor8\\Blazor8.csproj",
+      "packagesPath": "C:\\Users\\dti-yasminj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dti-yasminj\\OneDrive - Lab. Teuto Brasileiro\\Projetos\\Blazor8\\Blazor8\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\yasmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dti-yasminj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1200,14 +1210,15 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.teuto.com.br/nuget": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj": {
-              "projectPath": "C:\\Users\\yasmi\\OneDrive\\Documentos\\ProjetosC#\\Blazor8\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj"
+            "C:\\Users\\dti-yasminj\\OneDrive - Lab. Teuto Brasileiro\\Projetos\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj": {
+              "projectPath": "C:\\Users\\dti-yasminj\\OneDrive - Lab. Teuto Brasileiro\\Projetos\\Blazor8\\Blazor8.Client\\Blazor8.Client.csproj"
             }
           }
         }

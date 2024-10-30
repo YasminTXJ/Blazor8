@@ -1,0 +1,94 @@
+﻿@page "/form/data"
+@rendermode InteractiveServer
+
+<h3>Formulário</h3>
+
+@if (Mensagem is not null)
+{
+    <div class="alert alert-info">
+        @Mensagem
+    </div>
+}
+
+@if (MensagemErro is not null)
+{
+    <div class="alert alert-danger">
+        @MensagemErro
+    </div>
+}
+
+<EditForm Model="Usuario" OnSubmit="Acessar" FormName="login">
+   <DataAnnotationsValidator/> @*abilita a validacao*@
+   <ValidationSummary/> @*mostra o sumário dos erros decorridos da validação*@
+    <div class="row">
+        <div class="col-12">
+            <label for="email">E-mail</label>
+            <InputText id="email" @bind-Value="Usuario.Email" class="form-control" />
+            <ValidationMessage For="()=>Usuario.Email"/> @*mostra a mensagem de erro perto do componente*@
+        </div>
+        <div class="col-12">
+            <label for="senha">Senha</label>
+            <InputText type="password" id="senha" @bind-Value="Usuario.Senha" class="form-control" />
+            <ValidationMessage For="@(()=>Usuario.Senha)" />
+        </div>
+        <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-primary"> Acessar</button>
+        </div>
+    </div>
+</EditForm>
+
+@*Podemos usar o OnValidSubmit, no qual os dados só são enviados depois da valdiação
+estar OK, não preciso verificar antes.
+*@
+<br/>
+<h3>Formulário usando o OnValidSubmit</h3>
+<EditForm Model="Usuario" OnInvalidSubmit="ErroValidacao" OnValidSubmit="EnviarDadosValidados" FormName="login">
+    <DataAnnotationsValidator /> @*abilita a validacao*@
+    <ValidationSummary /> @*mostra o sumário dos erros decorridos da validação*@
+    <div class="row">
+    
+        <div class="col-12">
+            <label for="email">E-mail</label>
+            <InputText id="email" @bind-Value="Usuario.Email" class="form-control" />
+            <ValidationMessage For="()=>Usuario.Email" /> @*mostra a mensagem de erro perto do componente*@
+        </div>
+        <div class="col-12">
+            <label for="senha">Senha</label>
+            <InputText type="password" id="senha" @bind-Value="Usuario.Senha" class="form-control" />
+            <ValidationMessage For="@(()=>Usuario.Senha)" />
+        </div>
+        <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-primary"> Acessar</button>
+        </div>
+    </div>
+</EditForm>
+
+
+
+
+@code {
+
+    private string? Mensagem { get; set; }
+    private string? MensagemErro { get; set; }
+    private Usuario Usuario { get; set; } = new Usuario();
+
+
+    public void Acessar(EditContext context)
+    {
+
+        //Validação
+        if(context.Validate())
+        {
+            Mensagem = $" Acessando ........Email: {Usuario.Email} - Senha: {Usuario.Senha} ";
+        }
+
+    }
+    public void EnviarDadosValidados(EditContext context)
+    {
+        Mensagem = " Validação OK ";
+    }
+    public void ErroValidacao(EditContext context)
+    {
+        MensagemErro = $" Validação com ERRO";
+    }
+}
